@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game </title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            background-image: url(./chessimage.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 20px solid rgb(7, 7, 70);
+            /* Wood brown color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: white;
+
+        }
+
+        td {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        tr:nth-child(odd) td:nth-child(even),
+        tr:nth-child(even) td:nth-child(odd) {
+            background-color: #ceccccd7;
+        }
+
+        tr:nth-child(odd) td:nth-child(odd),
+        tr:nth-child(even) td:nth-child(even) {
+            background-color: rgb(128, 125, 125);
+        }
+
+        .piece {
+            display: block;
+            font-family: "Arial", sans-serif;
+        }
+
+        .black {
+            color: #000;
+        }
+
+        .black::before {
+            content: '\265F';
+        }
+
+        .black.knight::before {
+            content: '\265E';
+        }
+
+        .black.bishop::before {
+            content: '\265D';
+        }
+
+        .black.rook::before {
+            content: '\265C';
+        }
+
+        .black.queen::before {
+            content: '\265B';
+        }
+
+        .black.king::before {
+            content: '\265A';
+        }
+
+        .white {
+            color: #fff;
+        }
+
+        .white::before {
+            content: '\2659';
+        }
+
+        .white.knight::before {
+            content: '\2658';
+        }
+
+        .white.bishop::before {
+            content: '\2657';
+        }
+
+        .white.rook::before {
+            content: '\2656';
+        }
+
+        .white.queen::before {
+            content: '\2655';
+        }
+
+        .white.king::before {
+            content: '\2654';
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+    <h1>Chess Game </h1>
+    <table>
+        <!-- Rows for the chessboard -->
+        <tr>
+            <td class="black rook"></td>
+            <td class="black knight"></td>
+            <td class="black bishop"></td>
+            <td class="black queen"></td>
+            <td class="black king"></td>
+            <td class="black bishop"></td>
+            <td class="black knight"></td>
+            <td class="black rook"></td>
+        </tr>
+        <tr>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+            <td class="black pawn"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+            <td class="white pawn"></td>
+        </tr>
+        <tr>
+            <td class="white rook"></td>
+            <td class="white knight"></td>
+            <td class="white bishop"></td>
+            <td class="white queen"></td>
+            <td class="white king"></td>
+            <td class="white bishop"></td>
+            <td class="white knight"></td>
+            <td class="white rook"></td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
